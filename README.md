@@ -2,9 +2,11 @@
 Université de Nantes - Licence 1 Informatique (XLGIIE010) - 2025/2026
 
 ===== Équipe =====
+
 T. COINCE - A. MARIE - Y. WANG (E238394Z)
 
 ===== Description du Projet =====
+
 Il s'agit d'un jeu de type Rogue s'exécutant dans le terminal. Le joueur contrôle un personnage (@) qui doit se déplacer sur une grille, lue depuis un fichier texte, depuis un point de départ jusqu'à un point d'arrivée ($). Le jeu comprend des éléments tels que des murs(#), des équipements(présenté comme lettre minuscule), des monstres(présenté en lettre majuscule) et des portes(présenté comme les chiffres). L'objectif principal du projet est de mettre en pratique la programmation en C++, la conception modulaire et le travail d'équipe.
 
 ===== Fonctionnalités Principales =====
@@ -16,7 +18,9 @@ Il s'agit d'un jeu de type Rogue s'exécutant dans le terminal. Le joueur contr�
 6. Portes interactives : trouvez et utilisez des clés pour déverrouiller les portes qui barrent le chemin.
 
 ===== Guide de Compilation et d'Exécution =====
+
 ===== Prérequis =====
+
 1. Un terminal sous Unix/Linux, macOS, ou Windows.
 2. Un compilateur compatible C++(comme g++).
 3. Un répertoire qui contient : - controls.txt
@@ -26,11 +30,15 @@ Il s'agit d'un jeu de type Rogue s'exécutant dans le terminal. Le joueur contr�
                                 - fichier_defaite.txt
                                 - lib_projet_ncurses(.cpp et .hpp) 
                                 - projet_fsemestre_rogue_like.cpp
-===== Étapes de Compilation===== 
+
+===== Étapes de Compilation=====
+
 1. Assurez-vous que ce répertoire contient les fichiers de données nécessaires.
 2. Ouvrez un terminal et naviguez jusqu'à ce répertoire.
 3. Compilez avec la commande suivante : g++ -Iextlib/pdcurses/include -Lextlib/pdcurses/lib projet_fsemestre_rogue_like.cpp -lpdcurses -o projet.exe
+
 ===== Lancer le Jeu ===== 
+
 1. Une fois compilé, exécutez le binaire généré : ./projet.exe
 2. À l'invite, entrez le nom de votre fichier carte (par exemple, carte_exemple.txt).
 3. Entrez le nom de votre personnage (7 caractères maximum).
@@ -39,6 +47,7 @@ Il s'agit d'un jeu de type Rogue s'exécutant dans le terminal. Le joueur contr�
 6. Trouvez les clés (a, b, u, w) pour ouvrir les portes numérotées (1-9). Collectez potions et armes pour devenir plus fort !
 
 ===== Contributions Principales & Implémentation =====
+
 Ce projet fut un travail d'équipe. Ma responsabilité principale a été la logique du moteur de jeu central, englobant les systèmes suivants (correspondant aux algorithmes clés du code) :
 1. Gestion de toute la sortie terminal : affichage de la carte, fermeture des écrans et mise à jour en direct des statistiques et de l'interface.
    affichage_map(), fermer_map(), ecrire_stat_joueur(), affichage_controls()
