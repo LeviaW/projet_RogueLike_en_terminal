@@ -1,0 +1,23 @@
+
+
+    SCENARIO DU JEU:
+               
+    Je... je ne sais pas ou je suis... J'etais parti explorer et main-
+    tenant je suis coince quelque part, et je dois sortir d'ici!
+
+    Tout est sombre et inquietant... Je sens que des creatures rodent
+    autour de moi. Elles sont dangereuses, je le sais...
+
+    Il y a un monstre... un monstre enorme, je sens ses yeux sur moi...
+    Je dois le vaincre avant de pouvoir m'echapper.
+    
+                            
+    (appuyez sur P jusqu'a l'affichage de la carte PUIS APPUYEZ sur Z 
+               pour lancer le jeu et son interface)                          
+                                
+                               APPUYEZ SUR P POUR LANCER LE JEU ---->
+
+
+
+
+

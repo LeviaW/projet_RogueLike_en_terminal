@@ -1,0 +1,24 @@
+
+
+    CONTROLES DU JEU:		   					      CONDITIONS DE VICTOIRE:                   
+    P = Remet a zero la partie						 Tuer le BOSS(R) en PREMIER 
+    A = Ferme la console						       ET ENSUITE
+    Z = Deplacement vers le haut					Sortir par la porte de Sortie($)
+    Q = Deplacement vers la gauche
+    S = Deplacement vers le bas
+    D = Deplacement vers la droite		
+    
+    ELEMENTS DU JEU:							           CONDITION DE DEFAITE:
+    Cles: a, b, u, w							           Point de vie du joueur en dessous de 0 
+    Potions: d, e, g, n, o, x
+    Armes: c, k, m, r, s, v, y
+    
+    NIVEAU MONSTRES:
+    Niveau 1: I, J, X, Y
+    Niveau 2: V, H, K, L, M, N, O, P
+    Niveau 3: A, C, D, E, F, G, Q, V
+    BOSS: R
+
+
+
+				                           APPUYEZ SUR P POUR LANCER LE SCENARIO ---->
