@@ -48,18 +48,18 @@ Il s'agit d'un jeu de type Rogue s'exécutant dans le terminal. Le joueur contr�
 
 ===== Contributions Principales & Implémentation =====
 
-Ce projet fut un travail d'équipe. Ma responsabilité principale a été la logique du moteur de jeu central, englobant les systèmes suivants (correspondant aux algorithmes clés du code) :
-1. Gestion de toute la sortie terminal : affichage de la carte, fermeture des écrans et mise à jour en direct des statistiques et de l'interface.
-   affichage_map(), fermer_map(), ecrire_stat_joueur(), affichage_controls()
-   
-2. Conception et écriture de la logique pour lire les fichiers carte et instancier correctement toutes les entités du jeu (joueur, monstres, objets, portes) avec leurs caractéristiques.
-   initialisation_joueur(), initialisation_monstre(), initialisation_equipement(), initialisation_porte()	
+Ce projet fut un travail d'équipe. Ma contribution principale porte sur la conception de la logique cœur (parsing, instanciation, IA, règles de combat), avec un souci de robustesse et de lisibilité :
+1. Monteur/Conception et écriture de la logique pour lire les fichiers carte et instancier correctement toutes les entités du jeu (joueur, monstres, objets, portes) avec leurs caractéristiques.
+   Codes inclus : initialisation_joueur(), initialisation_monstre(), initialisation_equipement(), initialisation_porte()	
 
-3. Création du système complet de comportement de l'IA pour les monstres, incluant la vérification de la vision, la prise de décision entre mouvement aléatoire et ciblé, et la coordination des actions pour tous les monstres.
-   deplacement_monstre_aleatoire(), deplacement_monstre_vers_joueur(), monstre_voit_joueur(), deplacement_monstre()
+3. L'IA pour les monstres, incluant la vérification de la vision, la prise de décision du mouvement aléatoire et du movement ciblé quand un monstre voit le joueur, et la coordination des actions pour tous les monstres.
+   Codes inclus : deplacement_monstre_aleatoire(), deplacement_monstre_vers_joueur(), monstre_voit_joueur(), deplacement_monstre()
 
 4. Implémentation de la résolution du combat au tour par tour, des modifications de stats et de la mécanique visuelle unique de "projection" pour le joueur vaincu.
    combat_monstre_joueur(), monstre_jette_joueur()	
 
 ===== Limites =====
+
 1. Pour des raisons de simplicité en phase de prototype, les fonctions de vérification (est_mur, est_porte) lisent le fichier à chaque appel. Une optimisation évidente serait de stocker la carte en mémoire.
+   
+2. Correction des conditions de collision (portes/murs) + tests unitaires simples.
