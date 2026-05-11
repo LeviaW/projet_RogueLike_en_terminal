@@ -3,7 +3,7 @@ Université de Nantes - Licence 1 Informatique (XLGIIE010) - 2025/2026
 
 ===== Équipe =====
 
-T. COINCE - A. MARIE - Y. WANG (E238394Z)
+T. COINCE - A. MARIE - Y. WANG
 
 ===== Description du Projet =====
 
